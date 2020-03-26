@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="java-business-common-mistakes" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="concurrency-wrong" target="1.8" />
+      <module name="java-business-common-mistakes" target="1.8" />
+      <module name="threadlocal-wrong" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="concurrency-wrong" options="-parameters" />
+      <module name="java-business-common-mistakes" options="-parameters" />
+      <module name="threadlocal-wrong" options="-parameters" />
+    </option>
+  </component>
+</project>
